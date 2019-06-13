@@ -52,6 +52,7 @@ var tables = [{
         email: "me@otherguy.com"
     }
 ];
+console.log(tables);
 
 // Routes
 // =============================================================
@@ -70,21 +71,6 @@ app.get("/add", function (req, res) {
 // Displays all tables
 app.get("/api/tables", function (req, res) {
     return res.json(tables);
-});
-
-// Displays a single character, or returns false
-app.get("/api/tables/:table", function (req, res) {
-    var chosen = req.params.table;
-
-    console.log(chosen);
-
-    for (var i = 0; i < tables.length; i++) {
-        if (chosen === tables[i].uniqueID) {
-            return res.json(tables[i]);
-        }
-    }
-
-    return res.json(false);
 });
 
 // Create New tables - takes in JSON input
