@@ -1,0 +1,23 @@
+{
+  "name": "hot_resturant",
+  "version": "1.0.0",
+  "description": "",
+  "main": "table_list_api.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ligolf/hot_resturant.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ligolf/hot_resturant/issues"
+  },
+  "homepage": "https://github.com/ligolf/hot_resturant#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "path": "^0.12.7"
+  }
+}
